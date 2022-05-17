@@ -1,0 +1,26 @@
+{
+  "name": "@eth-dapp/nft-minting-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "author": "Jofil Inoc Baring",
+  "license": "MIT",
+  "dependencies": {
+    "@pinia/nuxt": "^0.1.9"
+  },
+  "devDependencies": {
+    "@metamask/onboarding": "^1.0.1",
+    "@unocss/nuxt": "^0.33.5",
+    "nuxt": "3.0.0-rc.3"
+  },
+  "engines": {
+    "node": "^16.15.0",
+    "yarn": "~1.22.19"
+  }
+}
