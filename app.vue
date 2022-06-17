@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
+  <div class="bg-secondary font-sans h-screen">
     <GlobalTheHeader />
     <main>
       <NuxtPage />

@@ -11,9 +11,6 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       ],
-      bodyAttrs: {
-        class: 'bg-secondary font-sans text-2xl',
-      }
     }
   },
   loading: {
@@ -27,7 +24,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['swiper'],
   },
-  css: [],
+  css: [
+    '~/assets/main.css',
+  ],
   content: {},
   unocss: {
     preflight: true,
@@ -36,5 +35,14 @@ export default defineNuxtConfig({
         'secondary': '#0D0D11',
       },
     }
+  },
+  runtimeConfig: {
+    public: {
+      provider: {
+        mainnet: `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_KEY}`,
+        rinkeby: `wss://rinkeby.infura.io/ws/v3/${process.env.INFURA_KEY}`,
+        develop: 'http://127.0.0.1:7545',
+      },
+    },
   },
 })
