@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    home landing
+    <span class="text-gradient text-6xl font-heading">home landing</span>
   </section>
 </template>
 

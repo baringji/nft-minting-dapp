@@ -19,13 +19,15 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@unocss/nuxt',
-    'nuxt-web3.js'
+    'nuxt-web3.js',
   ],
   build: {
-    transpile: ['swiper'],
+    transpile: [
+      'swiper',
+    ],
   },
   css: [
-    '~/assets/main.css',
+    '~/assets/css/main.css',
   ],
   content: {},
   unocss: {

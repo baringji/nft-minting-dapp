@@ -1,5 +1,0 @@
-.border-gradient {
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to right, #fff, #000) 1;
-}
