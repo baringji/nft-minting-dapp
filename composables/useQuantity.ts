@@ -1,16 +1,18 @@
 export function useQuantity() {
-  const quantity = useState('quantity', () => 1)
+  const tokenQuantity = useState('tokenQuantity', () => 1)
+  const tokenLimit = useState('tokenLimit', () => 1)
 
   function increment() {
-    quantity.value++
+    tokenQuantity.value >= tokenLimit.value ? tokenQuantity.value = tokenLimit.value : tokenQuantity.value++
   }
 
   function decrement() {
-    quantity.value <= 1 ? quantity.value = 1 : quantity.value--
+    tokenQuantity.value <= 1 ? tokenQuantity.value = 1 : tokenQuantity.value--
   }
 
   return {
-    quantity,
+    tokenQuantity,
+    tokenLimit,
     increment,
     decrement,
   }

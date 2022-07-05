@@ -2,10 +2,14 @@
   useHead({
     title: 'Mint something awesome!',
   })
+
+  definePageMeta({
+    layout: 'custom',
+  })
 </script>
 
 <template>
-  <article>
+  <article class="bg-zinc-900">
     <HomeLanding />
   </article>
 </template>

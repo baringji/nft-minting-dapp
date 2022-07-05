@@ -2,10 +2,14 @@
   useHead({
     title: 'Privacy Policy',
   })
+
+  definePageMeta({
+    layout: 'default',
+  })
 </script>
 
 <template>
-  <article>
+  <article class="bg-zinc-900">
     Privacy Policy
   </article>
 </template>

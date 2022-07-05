@@ -2,10 +2,14 @@
   useHead({
     title: 'Contact Us',
   })
+
+  definePageMeta({
+    layout: 'default',
+  })
 </script>
 
 <template>
-  <article>
+  <article class="bg-zinc-900">
     Contact Us
   </article>
 </template>

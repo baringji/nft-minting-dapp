@@ -23,6 +23,7 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: [
+      '@nuxt/content-edge',
       'swiper',
     ],
   },
@@ -41,9 +42,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       provider: {
-        mainnet: `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_KEY}`,
-        rinkeby: `wss://rinkeby.infura.io/ws/v3/${process.env.INFURA_KEY}`,
-        develop: 'http://127.0.0.1:7545',
+        host: '',
       },
     },
   },

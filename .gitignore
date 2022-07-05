@@ -83,6 +83,7 @@ typings/
 .nitro
 .output
 dist
+public/nft
 
 # Gatsby files
 .cache/
